@@ -1,4 +1,5 @@
 from pprint import pprint
+from WordCounter import WordCounter
 
 def ex1():
     people_list = [
@@ -64,4 +65,15 @@ def ex4():
     print(newList)
 
 def ex5():
+    sentence = "This is a test of the emergency broadcast system"
+    word_counter = WordCounter(sentence)
+    # word_counter.count_words()
+    print(word_counter.get_word_count()) 
+    # print(word_counter.get_shortest_word())
+    # print(word_counter.get_longest_word())
+ex5()
+
+
+
+
     
