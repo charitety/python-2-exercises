@@ -1,5 +1,8 @@
 from pprint import pprint
 from WordCounter import WordCounter
+from Drawf import Drawf
+from Fighter import Fighter
+from Invoice import Invoice
 
 def ex1():
     people_list = [
@@ -73,6 +76,29 @@ def ex5():
     # print(word_counter.get_longest_word())
 ex5()
 
+def ex9():
+    f = Fighter(18)
+    d = Drawf(15)
+    print(f)
+    print(d)
+    f.fight(d)
+    d.fight(f)
+    print(f)
+    print(d)
+
+ex9()
+
+
+def ex10():
+    data = [
+        "1, 2322, 10.00, False",
+        "2, 5435, 60.30, True",
+        "3, 3433, 15.63, False",
+        "4, 8439, 12.77, False",
+        "5, 3424, 11.34, False",
+    ]
+
+ex10()
 
 
 
